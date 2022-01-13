@@ -1,0 +1,16 @@
+# Project exclude paths
+/member-parent/authentication-consumer/target/
+/member-parent/eureka/target/
+/member-parent/member-api/target/
+/member-parent/member-entity/target/
+/member-parent/mysql-provide/target/
+/member-parent/project-consumer/target/
+/member-parent/redis-provide/target/
+/member-parent/session-a/target/
+/member-parent/session-b/target/
+/member-parent/zuul/target/
+/parent/component/target/
+/parent/entity/target/
+/parent/webui/target/
+/reverse/target/
+/util/target/
