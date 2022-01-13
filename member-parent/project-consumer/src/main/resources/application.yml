@@ -20,7 +20,7 @@ aliyun:
   oss:
     access-key-id:
     access-key-secret:
-    bucket-domain: http://feng2021.oss-cn-shenzhen.aliyuncs.com
+    bucket-domain:
     bucket-name: feng2021
     end-point: http://oss-cn-shenzhen.aliyuncs.com
 
