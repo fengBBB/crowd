@@ -1,0 +1,28 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: feng-crowd-auth
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: localhost
+  session:
+    store-type: redis
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+shortmessage:
+  host: https://dfsns.market.alicloudapi.com
+  path: /data/send_sms
+  method: POST
+  appcode: b6e295671719498fba1db2977e5532c1
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

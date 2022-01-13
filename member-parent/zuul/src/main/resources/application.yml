@@ -1,0 +1,27 @@
+server:
+  port: 80
+spring:
+  application:
+    name: feng-crowd-zuul
+  redis:
+    host: localhost
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+zuul:
+  ignored-services: "*"
+  sensitive-headers: "*"
+  routes:
+    crowd-portal:
+      service-id: feng-crowd-auth
+      path: /**
+    crowd-project:
+      service-id: feng-crowd-project
+      path: /project/**
+  add-host-header: true
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

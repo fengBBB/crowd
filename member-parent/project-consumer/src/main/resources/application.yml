@@ -1,0 +1,29 @@
+server:
+  port: 6000
+spring:
+  application:
+    name: feng-crowd-project
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: localhost
+  session:
+    store-type: redis
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+aliyun:
+  oss:
+    access-key-id: LTAI5tJMGFWkG57X4ftTmUe5
+    access-key-secret: YFVQiWcwGXZ51RygN6mBcehg8Ldkq7
+    bucket-domain: http://feng2021.oss-cn-shenzhen.aliyuncs.com
+    bucket-name: feng2021
+    end-point: http://oss-cn-shenzhen.aliyuncs.com
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

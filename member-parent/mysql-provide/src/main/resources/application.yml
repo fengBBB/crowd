@@ -1,0 +1,28 @@
+server:
+  port: 2000
+spring:
+  application:
+    name: feng-crowd-mybatis
+  datasource:
+    name: mydb
+    url: jdbc:mysql://localhost:3306/crowdfunding?serverTimezone=UTC
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+mybatis:
+  mapper-locations: classpath*:/mybatis/mapper/*Mapper.xml
+
+
+logging:
+  level:
+    com.feng.crowd.mapper: debug
+    com.feng.crowd.test: debug

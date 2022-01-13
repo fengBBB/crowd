@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+    <!-- 配置自动扫描的包，主要是把service扫描到ioc容器中 -->
+    <context:component-scan base-package="com.feng.crowd.service"/>
+    <!--  配置事务管理器-->
+    <bean id="txManger" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- 配置事务切面 -->
+    <aop:config>
+        <!-- 配置切入点 -->
+        <aop:pointcut id="txpoint" expression="execution(* *..*ServiceImpl.*(..))"/>
+        <!-- 将切入点和事务通知绑定 -->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txpoint"/>
+    </aop:config>
+
+    <!-- 配置事务通知 transaction-manager 绑定事务管理器 -->
+    <tx:advice id="txAdvice" transaction-manager="txManger">
+        <!-- 查询方法 ，只配置只读属性，提高性能 -->
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="query*" read-only="true"/>
+            <tx:method name="count" read-only="true"/>
+
+            <!-- 配置增删改方法  -->
+            <!-- propagation
+                        REQUIRES：默认属性，表示当前方法只能工作在事务中，如果线程上已经没有事务，就创建一个新的事务
+                                 弊端：如果当前事务其他方法回滚，这个方法也会回滚
+                        REQUIRES_NEW：当前方法只能工作在事务中，不论线程上有没有事务，都创建一个新的事务
+                                  好处： 不会受其他事务回滚的影响
+             -->
+            <!--
+             rollback-for：配置事务方法针对什么样的异常回滚
+             -->
+            <tx:method name="save*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+            <tx:method name="insert*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+            <tx:method name="update*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+            <tx:method name="remove*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+            <tx:method name="batch*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+        </tx:attributes>
+    </tx:advice>
+</beans>
