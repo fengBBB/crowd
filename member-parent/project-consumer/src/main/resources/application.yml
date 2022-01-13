@@ -18,8 +18,8 @@ eureka:
 
 aliyun:
   oss:
-    access-key-id: LTAI5tJMGFWkG57X4ftTmUe5
-    access-key-secret: YFVQiWcwGXZ51RygN6mBcehg8Ldkq7
+    access-key-id:
+    access-key-secret:
     bucket-domain: http://feng2021.oss-cn-shenzhen.aliyuncs.com
     bucket-name: feng2021
     end-point: http://oss-cn-shenzhen.aliyuncs.com
