@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webui:war">
+    <output-path>$PROJECT_DIR$/parent/webui/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>webui</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="webui.war">
+      <element id="artifact" artifact-name="webui:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redis-provide" />
+        <module name="eureka" />
+        <module name="mysql-provide" />
+        <module name="zuul" />
+        <module name="reverse" />
+        <module name="member-entity" />
+        <module name="session-a" />
+        <module name="session-b" />
+        <module name="component" />
+        <module name="order-consumer" />
+        <module name="webui" />
+        <module name="util" />
+        <module name="authentication-consumer" />
+        <module name="project-consumer" />
+        <module name="member-api" />
+        <module name="pay-consumer" />
+        <module name="entity" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authentication-consumer" target="1.5" />
+      <module name="component" target="1.7" />
+      <module name="entity" target="1.7" />
+      <module name="eureka" target="1.5" />
+      <module name="member-api" target="8" />
+      <module name="member-entity" target="1.5" />
+      <module name="member-parent" target="1.5" />
+      <module name="mysql-provide" target="1.5" />
+      <module name="order-consumer" target="1.5" />
+      <module name="parent" target="1.5" />
+      <module name="pay-consumer" target="1.5" />
+      <module name="project-consumer" target="1.5" />
+      <module name="redis-provide" target="1.5" />
+      <module name="reverse" target="1.5" />
+      <module name="session-a" target="8" />
+      <module name="session-b" target="8" />
+      <module name="util" target="7" />
+      <module name="webui" target="1.7" />
+      <module name="zuul" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

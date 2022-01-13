@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/member-parent/authentication-consumer/authentication-consumer.iml" filepath="$PROJECT_DIR$/member-parent/authentication-consumer/authentication-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/component/component.iml" filepath="$PROJECT_DIR$/parent/component/component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/entity/entity.iml" filepath="$PROJECT_DIR$/parent/entity/entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/eureka/eureka.iml" filepath="$PROJECT_DIR$/member-parent/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/member-api/member-api.iml" filepath="$PROJECT_DIR$/member-parent/member-api/member-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/member-entity/member-entity.iml" filepath="$PROJECT_DIR$/member-parent/member-entity/member-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/member-parent.iml" filepath="$PROJECT_DIR$/member-parent/member-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/mysql-provide/mysql-provide.iml" filepath="$PROJECT_DIR$/member-parent/mysql-provide/mysql-provide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/order-consumer/order-consumer.iml" filepath="$PROJECT_DIR$/member-parent/order-consumer/order-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/pay-consumer/pay-consumer.iml" filepath="$PROJECT_DIR$/member-parent/pay-consumer/pay-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/project-consumer/project-consumer.iml" filepath="$PROJECT_DIR$/member-parent/project-consumer/project-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/redis-provide/redis-provide.iml" filepath="$PROJECT_DIR$/member-parent/redis-provide/redis-provide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reverse/reverse.iml" filepath="$PROJECT_DIR$/reverse/reverse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/session-a/session-a.iml" filepath="$PROJECT_DIR$/member-parent/session-a/session-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/session-b/session-b.iml" filepath="$PROJECT_DIR$/member-parent/session-b/session-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/webui/webui.iml" filepath="$PROJECT_DIR$/parent/webui/webui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/zuul/zuul.iml" filepath="$PROJECT_DIR$/member-parent/zuul/zuul.iml" />
+    </modules>
+  </component>
+</project>
