@@ -21,7 +21,7 @@ shortmessage:
   host: https://dfsns.market.alicloudapi.com
   path: /data/send_sms
   method: POST
-  appcode: b6e295671719498fba1db2977e5532c1
+  appcode:
 
 ribbon:
   ReadTimeout: 10000
